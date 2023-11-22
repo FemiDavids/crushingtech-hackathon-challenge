@@ -3,17 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Hackathon Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <header class="site-header">
-      <nav>
-        <div class="logo"></div>
-        <input type="text" class="search-bar" />
+    <header class="header">
+      <img class="logo" alt="" />
+      <input type="text" class="search-bar" />
+      <nav class="main-nav">
+        <button></button>
+        <button></button>
       </nav>
     </header>
-    <main class="container"></main>
+    <main class="container">
+      <div class="setup-guide--wrapper">
+        <div class="setup-guide--toast">
+          <p class="text-content">
+            Extend your trial for $1/month for 3 months on select plans.
+          </p>
+          <div class="flex-group">
+            <button></button>
+            <svg></svg>
+          </div>
+        </div>
+        <div class="setup-guide--accordion"></div>
+      </div>
+    </main>
   </body>
   <script src="app.js"></script>
 </html>
