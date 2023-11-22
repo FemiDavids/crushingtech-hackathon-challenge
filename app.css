@@ -37,7 +37,7 @@
 html {
   /* 62.5% is 10px of 16px in percentage to enable ease of "rem" usage 
   and user's browser font-size setting  */
-  font-size: 62.5% !important;
+  font-size: 62.5%;
 }
 
 body {
@@ -73,15 +73,21 @@ body {
   justify-content: center;
 }
 
+.search-bar {
+  width: 48rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+
 .setup-guide--wrapper {
   margin-top: 3.2rem;
-  max-width: 80rem;
 
   display: flex;
   align-items: flex-start;
 }
 
 .setup-guide--toast {
+  width: 80rem;
   height: 5.6rem;
   padding: 1.2rem 0.8rem 1.2rem 1.6rem;
   background-color: var(--neutral-300);
@@ -95,4 +101,33 @@ body {
 .setup-guide--toast .text-content {
   font-size: var(--fs-text-2);
   color: var(--white);
+}
+
+.setup-guide--toast .flex-group-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.setup-guide--toast .flex-group-row button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--white);
+  color: #323232;
+
+  font-size: var(--fs-text-1);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-small);
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  text-align: center;
+  box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+}
+
+.close-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0.6rem;
 }
