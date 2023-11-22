@@ -1,6 +1,13 @@
 /* spacing system */
 
 /* style guide  */
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --ff-base: sans-serif;
+
+  --fw-regular: 400;
+}
 
 /* global reset  */
 
@@ -11,3 +18,12 @@
 }
 
 /* general styling */
+html {
+  font-size: 62.5% !important; /* 62.5% is 10px of 16px in percentage to enable ease of "rem" usage */
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: var(--ff-base);
+}
